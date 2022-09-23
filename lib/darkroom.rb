@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 require_relative "darkroom/version"
+require_relative "darkroom/chainable"
+require_relative "darkroom/builder"
 
 module Darkroom
-  class Error < StandardError; end
-  # Your code goes here...
+  extend Chainable
+
+  class Error < StandardError
+  end
 end
