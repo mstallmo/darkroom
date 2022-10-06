@@ -14,3 +14,5 @@ AllCops:
 
 Layout/LineLength:
   Max: 120
+RSpec/ExampleLength:
+  Enabled: false
