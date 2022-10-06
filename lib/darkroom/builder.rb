@@ -9,5 +9,9 @@ module Darkroom
     def initialize(options)
       @options = options
     end
+
+    def call!
+      Pipeline.new(@options).call
+    end
   end
 end
